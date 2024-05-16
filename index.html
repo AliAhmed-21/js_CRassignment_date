@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        //task1
+        // var now = new Date();
+        // alert(now)
+
+        //task2
+        // var now = new Date();
+        // var month1 = now.getMonth();
+        
+        // var month = ["January","Februray","March","April","May","June","July","August","September","October","Novvenber","December"]
+      
+        // alert("Current Month: "+month[month1])
+
+
+        //task 3
+        // var weekArr = ["Sun","Mon","Tues","Wed","Thur","Fri","Sat"];
+        // var now = new Date();
+        // alert("Today is "+weekArr[now.getDay()])
+
+        //task 4
+        
+        // var now = new Date();
+        // var day = now.getDay();
+        // switch (day) {
+        //     case 0:
+        //     case 6:
+                    
+        //         alert("Its fun day")
+        //         break;
+        
+        
+        //     default:
+        //         alert("Its working day ")
+        //         break;
+        // }
+         
+        //task 5
+    //     let currentDate = new Date();
+    //     let dayOfMonth = currentDate.getDate();
+
+    //     if (dayOfMonth < 16) {
+    //     console.log('First fifteen days of the month'); 
+    //     } else {
+    //    console.log('Last days of the month');}
+
+    //task 6
+    // var now = new Date();
+    // document.write("Current Date: "+now+"<br>") 
+    // var milisec = Math.floor(now/1000);
+    // var min = Math.floor(now/1000*60);
+    // document.write("Elapsed miliecond since january 1,1970: "+milisec +"<br>");
+    // document.write("Elapsed minutes since january 1,1970: "+min);
+
+//task 7
+
+// var currentTime = new Date();
+// var hour = currentTime.getHours();
+// if (hour < 12) {
+//   alert("It's AM");
+// } else {
+//   alert("It's PM");
+// }
+
+//task 8
+
+// let laterDate = new Date('2020-12-31T23:59:59');
+
+// console.log(laterDate);
+//task 9
+
+// let startRamadan2024 = new Date('2024-03-11T00:00:00Z');
+
+
+// let today = new Date();
+
+
+// let differenceInMilliseconds = today - startRamadan2024;
+
+
+// let differenceInDays = differenceInMilliseconds / (1000 * 60 * 60 * 24);
+// alert(Math.floor(differenceInDays)+" days have passed since 1st Ranzan 2024" );
+
+//task 12
+
+// let currentDate = new Date();
+// let now = new Date();
+
+
+// currentDate.setFullYear(currentDate.getFullYear() - 100);
+
+// document.write("Current Date: "+ now +"<br>")
+// document.write(" 100 years back, it was: " + currentDate.toString());
+
+
+//task 13
+// var today = new Date();
+// var currentYear = today.getFullYear();
+// var currentMonth = today.getMonth() + 1; 
+// var currentDate = today.getDate();
+
+
+// var birth = prompt("Enter your date of birth in the format MM/DD/YYYY:");
+// var birthparts = birth.split('/');
+
+
+// var birthYear = parseInt(birthparts[2], 10);
+// var birthMonth = parseInt(birthparts[0], 10);
+// var birthDate = parseInt(birthparts[1], 10);
+
+
+// var age = currentYear - birthYear;
+// if (currentMonth < birthMonth || (currentMonth === birthMonth && currentDate < birthDate)) {
+//   age--;
+// }
+
+// // Display the age
+// document.write("You are " + age + " years old."+"<br>");
+// document.write("your birth year is "+birthYear)
+
+//task 14
+var customerName=prompt("Enter your name:")
+document.write("Customer Name: "+customerName+"<br>");
+
+var now = new Date();
+ var month1 = now.getMonth();
+var month = ["January","Februray","March","April","May","June","July","August","September","October","Novvenber","December"]
+      
+document.write("Month: "+month[month1]+"<br>")
+
+let units = (Math.random()*600)+1;
+units = Math.floor(units);
+document.write("units: "+units+"<br>")
+
+let charges = 16 ;
+document.write("Charges "+ charges+"<br>" )
+
+let amount = units*charges
+document.write("Net Amount Payable (within Due Date): "+amount+"<br>");
+
+let late = 350;
+let latefees = amount + late;
+document.write("Late Payment Surcharge: "+late+ "<br>");
+document.write("Gross Amount Payable (after Due Date): "+latefees)
+
+ 
+
+
+
+    </script>
+</body>
+</html>
